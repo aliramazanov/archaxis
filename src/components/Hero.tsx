@@ -84,7 +84,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-xl text-base lg:text-lg mb-10 lg:mb-16"
+                  className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-xl text-base lg:text-lg mb-4 lg:mb-4"
                 >
                   <Link
                     href={heroContent.intro.btn.href}
