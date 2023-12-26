@@ -77,12 +77,15 @@ const About: React.FC<AboutProps> = ({ className }) => {
           <div className="lg:flex justify-center">
             <div className="lg:w-8/12 lg:flex gap-20 items-center">
               <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
-                <motion.div style={{ y: imgScroll }} className="z-[2] relative">
+                <motion.div
+                  style={{ y: imgScroll, marginBottom: "5rem" }}
+                  className="z-[2] relative "
+                >
                   <Image
                     className="object-cover w-full lg:max-w-2xl object-center h-[550px]"
                     src={require("/src/images/architects.jpg")}
                     alt="Architecture"
-                    width={400}
+                    width={550}
                     height={550}
                   />
                 </motion.div>
@@ -121,7 +124,7 @@ const About: React.FC<AboutProps> = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl text-gray-800 mb-6"
+                  className="text-2xl text-gray-800 mb-6 "
                 >
                   {aboutContent.content.title}
                 </motion.h3>
@@ -157,7 +160,6 @@ const About: React.FC<AboutProps> = ({ className }) => {
                     className="transition-all duration-300 ease-in-out text-sm tracking-[2px] font-bold uppercase bg-green-600 py-4 px-5 text-white inline-block hover:bg-white hover:text-green-600 hover:shadow-xl"
                     href={"/about"}
                   >
-                    {" "}
                     {aboutContent.content.btn.label}
                   </Link>
                 </motion.p>
