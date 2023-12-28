@@ -1,9 +1,9 @@
 "use client";
-import React, { useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroProps } from "@/types/Types";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useRef } from "react";
 
 const heroContent = {
   intro: {

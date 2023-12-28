@@ -10,3 +10,6 @@ export interface WorkProps {
 export interface ArrowProps {
   className?: string;
 }
+export interface TestimonialsProps {
+  className?: string;
+}

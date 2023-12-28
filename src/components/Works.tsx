@@ -1,15 +1,15 @@
 "use client";
 import { WorkProps } from "@/types/Types";
-import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import React from "react";
 import {
-  BiHardHat,
-  BiPaintRoll,
-  BiNote,
   BiBulb,
+  BiHardHat,
   BiLayer,
+  BiNote,
   BiOutline,
+  BiPaintRoll,
 } from "react-icons/bi";
 import ArrowRight from "./Icons/ArrowRight";
 
