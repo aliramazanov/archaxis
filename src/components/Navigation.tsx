@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navMenu = [
   { href: "/", label: "home" },

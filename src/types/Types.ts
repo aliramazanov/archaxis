@@ -4,3 +4,6 @@ export interface HeroProps {
 export interface AboutProps {
   className?: string;
 }
+export interface WorkProps {
+  className?: string;
+}
