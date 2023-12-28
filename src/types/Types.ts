@@ -7,3 +7,6 @@ export interface AboutProps {
 export interface WorkProps {
   className?: string;
 }
+export interface ArrowProps {
+  className?: string;
+}
