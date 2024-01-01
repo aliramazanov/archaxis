@@ -1,9 +1,9 @@
 "use client";
 import { HeroProps } from "@/types/Types";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { LegacyRef, useRef } from "react";
 
 const heroContent = {
   intro: {
@@ -17,14 +17,18 @@ const heroContent = {
 };
 
 const Hero: React.FC<HeroProps> = ({ className }) => {
-  const ref = useRef(null);
+  const ref: LegacyRef<HTMLDivElement> | undefined = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
   });
 
-  const imgScroll = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
-  const imgScrollTwo = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
+  const imgScroll: MotionValue<number> = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [20, -20]
+  );
 
   return (
     <section>

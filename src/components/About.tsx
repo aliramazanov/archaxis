@@ -1,9 +1,9 @@
 "use client";
 import { AboutProps } from "@/types/Types";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { LegacyRef, RefObject, useRef } from "react";
 import Dots from "../../src/images/dots.svg";
 
 const aboutContent = {
@@ -25,14 +25,23 @@ const aboutContent = {
 };
 
 const About: React.FC<AboutProps> = ({ className }) => {
-  const ref = useRef(null);
+  const ref: LegacyRef<HTMLDivElement> | undefined = useRef(null);
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: ref as RefObject<HTMLElement>,
     offset: ["start end", "end start"],
   });
 
-  const imgScroll = useTransform(scrollYProgress, [0, 1], ["30%", "-10%"]);
-  const imgScrollTwo = useTransform(scrollYProgress, [0, 1], ["100%", "100%"]);
+  const imgScroll: MotionValue<number> = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [30, -10]
+  );
+
+  const imgScrollTwo: MotionValue<number> = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [100, 100]
+  );
 
   return (
     <section>

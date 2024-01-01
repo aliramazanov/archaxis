@@ -13,3 +13,8 @@ export interface ArrowProps {
 export interface TestimonialsProps {
   className?: string;
 }
+
+export interface NavMenuItem {
+  href: string;
+  label: string;
+}

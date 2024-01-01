@@ -1,11 +1,12 @@
 "use client";
+import { NavMenuItem } from "@/types/Types";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const navMenu = [
+const navMenu: NavMenuItem[] = [
   { href: "/", label: "home" },
   { href: "/projects", label: "projects" },
   { href: "/blog", label: "blog" },
@@ -14,32 +15,47 @@ const navMenu = [
 ];
 
 const Navigation: React.FC = () => {
-  const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  let height = null;
-  let width = null;
+  const [open, setOpen] = useState<boolean>(false);
+  const pathname: string = usePathname();
+  const [windowDimensions, setWindowDimensions] = useState<{
+    height: number;
+    width: number;
+  }>({
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+  });
 
-  if (typeof window !== "undefined") {
-    height = window.innerHeight;
-    width = window.innerWidth;
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <React.Fragment>
       <header role="banner" className="py-10 absolute w-full z-[3]">
         <div className="container px-4 mx-auto flex items-center justify-between">
           <div>
-            <Link className="text-[22px] text-gray-800 font-bold" href={"/"}>
+            <Link href={"/"} className="text-[22px] text-gray-800 font-bold">
               archaxis<span className="text-green-600">.</span>
             </Link>
           </div>
           <div className="flex">
             <ul className="hidden md:flex space-x-8" role="list">
-              {navMenu.map((menu, id) => (
+              {navMenu.map((menu) => (
                 <li key={menu.label}>
                   <Link
-                    className={`text-gray-800 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-green-600 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 before:scale-y-[1] before:scale-z-[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] hover:before:scale-y-[1] hover:before:scale-z-[1] text-[14px] tracking-[2px] font-semibold pb-2`}
                     href={menu.href}
+                    className={`text-gray-800 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-green-600 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 before:scale-y-[1] before:scale-z-[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] hover:before:scale-y-[1] hover:before:scale-z-[1] text-[14px] tracking-[2px] font-semibold pb-2`}
                   >
                     {menu.label}
                   </Link>
@@ -56,10 +72,10 @@ const Navigation: React.FC = () => {
           </div>
         </div>
       </header>
-      <Transition.Root show={open} as="div">
+      <Transition.Root show={open} as={React.Fragment}>
         <Dialog
           as="div"
-          className={"relative z-10"}
+          className="relative z-10"
           onClose={() => setOpen(false)}
         >
           <Transition.Child
@@ -85,11 +101,7 @@ const Navigation: React.FC = () => {
                   leaveFrom="translate-x-0"
                   leaveTo="translate-x-full"
                 >
-                  <Dialog.Panel
-                    className={
-                      "pointer-events-auto w-screen h-screen max-w-screen"
-                    }
-                  >
+                  <Dialog.Panel className="pointer-events-auto w-screen h-screen max-w-screen">
                     <div className="flex flex-col h-screen bg-white shadow-xl">
                       <div className="flex-1 px-12 py-12 sm:px-12">
                         <div className="flex items-start justify-between">
@@ -116,7 +128,7 @@ const Navigation: React.FC = () => {
                         <div className="mt-8">
                           <div className="flow-root">
                             <ul role="list">
-                              {navMenu.map((menu, id) => (
+                              {navMenu.map((menu) => (
                                 <li key={menu.label}>
                                   <Link
                                     href={menu.href}
