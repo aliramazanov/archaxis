@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <About className="py-16 lg:py-32 overflow-hidden" />
       <Works className="py-16 lg:py-16 md:mb-16" />
       <Testimonials className="py-16 lg:py-20" />
-      <Blog className="py-16 lg:py-20" />
+      <Blog className="py-16 lg:py-28" />
     </React.Fragment>
   );
 };
