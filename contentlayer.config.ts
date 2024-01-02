@@ -4,6 +4,8 @@ import {
   makeSource,
 } from "contentlayer/source-files";
 
+console.log("Content layer configuration started");
+
 const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `blog/*.mdx`,
@@ -38,13 +40,13 @@ const Post = defineDocumentType(() => ({
       type: "list",
       of: Category,
       description: "The categories of the post",
-      required: true,
+      required: false,
     },
   },
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `${doc._raw.flattenedPath}`,
+      resolve: (doc) => `\ ${doc._raw.flattenedPath}`,
     },
   },
 }));

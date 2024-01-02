@@ -24,7 +24,7 @@ export type Post = {
   /** The author of the post */
   author: string
   /** The categories of the post */
-  categories: Category[]
+  categories?: Category[] | undefined
   /** MDX file body */
   body: MDX
   url: string

@@ -4,6 +4,7 @@ import {
   defineNestedType,
   makeSource
 } from "contentlayer/source-files";
+console.log("Content layer configuration started");
 var Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `blog/*.mdx`,
@@ -38,13 +39,13 @@ var Post = defineDocumentType(() => ({
       type: "list",
       of: Category,
       description: "The categories of the post",
-      required: true
+      required: false
     }
   },
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `${doc._raw.flattenedPath}`
+      resolve: (doc) => ` ${doc._raw.flattenedPath}`
     }
   }
 }));
@@ -114,4 +115,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-KMD4OQTE.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-XIOPMHFE.mjs.map
