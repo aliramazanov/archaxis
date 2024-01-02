@@ -60,7 +60,7 @@ const About: React.FC<AboutProps> = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-xs mb-4 inline-block text-gray-500"
+                className="uppercase tracking-[3px] text-md mb-4 inline-block text-gray-500"
               >
                 {aboutContent.heading.subtitle}
               </motion.span>
@@ -77,7 +77,7 @@ const About: React.FC<AboutProps> = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="text-2xl lg:text-4xl"
+                className="text-2xl lg:text-4xl mb-12"
               >
                 {aboutContent.heading.title}
               </motion.h2>
@@ -94,8 +94,8 @@ const About: React.FC<AboutProps> = ({ className }) => {
                     className="object-cover w-full lg:max-w-2xl object-center h-[550px]"
                     src={require("/src/images/architects.jpg")}
                     alt="Architecture"
-                    width={550}
-                    height={550}
+                    width={800}
+                    height={800}
                   />
                 </motion.div>
                 <motion.div

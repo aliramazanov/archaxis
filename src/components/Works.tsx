@@ -120,7 +120,7 @@ const Works: React.FC<WorkProps> = ({ className }) => {
                         },
                       }}
                       viewport={{ once: true }}
-                      className="tracking-[3px] text-sm mb-5 inline-block text-gray-500"
+                      className="tracking-[3px] text-md uppercase mb-5 inline-block text-gray-500"
                     >
                       {worksContent.heading.subtitle}
                     </motion.span>

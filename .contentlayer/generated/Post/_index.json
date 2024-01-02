@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Exploring Modern Architecture",
+    "excerpt": "Discover the latest trends and innovations in modern architecture.",
+    "date": "2023-05-15T08:30:00.000Z",
+    "image": "/project1.jpg",
+    "author": "John Doe",
+    "categories": [
+      {
+        "type": "Contemporary Design"
+      }
+    ],
+    "url": "post/exploring-modern-architecture"
+  },
+  {
+    "title": "Sustainable Living Spaces",
+    "excerpt": "Explore eco-friendly and sustainable living spaces around the world.",
+    "date": "2023-06-20T14:45:00.000Z",
+    "image": "/project2.jpg",
+    "author": "Jane Smith",
+    "categories": [
+      {
+        "type": "Green Architecture"
+      }
+    ],
+    "url": "post/sustainable-living-spaces"
+  },
+  {
+    "title": "Innovative Urban Planning",
+    "excerpt": "Dive into the innovative urban planning strategies shaping future cities.",
+    "date": "2023-07-10T10:15:00.000Z",
+    "image": "/project3.jpg",
+    "author": "Alex Johnson",
+    "categories": [
+      {
+        "type": "Urban Development"
+      }
+    ],
+    "url": "post/innovative-urban-planning"
+  },
+  {
+    "title": "Architectural Marvels",
+    "excerpt": "Witness the beauty of architectural marvels spanning diverse continents.",
+    "date": "2023-08-05T12:00:00.000Z",
+    "image": "/project4.jpg",
+    "author": "Emily Rogers",
+    "categories": [
+      {
+        "type": "Global Wonders"
+      }
+    ],
+    "url": "post/architectural-marvels"
+  }
+]

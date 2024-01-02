@@ -13,8 +13,22 @@ export interface ArrowProps {
 export interface TestimonialsProps {
   className?: string;
 }
+export interface BlogProps {
+  className?: string;
+}
 
 export interface NavMenuItem {
   href: string;
   label: string;
+}
+
+export interface PostCardProps {
+  index: number;
+  post: {
+    url: string;
+    image: string;
+    title: string;
+    date: string;
+    author: string;
+  };
 }

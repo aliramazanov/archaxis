@@ -2,7 +2,7 @@
 import { TestimonialsProps } from "@/types/Types";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ArrowRight from "./Icons/ArrowRight";
@@ -18,53 +18,26 @@ const testimonialsContent = {
       name: "Jane Duke",
       role: "Homeowner",
       quote:
-        "Choosing Archaxis for our dream home was the best decision we made. Their team's creativity and attention to detail turned our ideas into a living masterpiece. From the initial concept discussions to the final touches, Archaxis showcased unparalleled professionalism. The architects seamlessly blended modern design with our lifestyle preferences, creating a harmonious living space. They navigated challenges with grace, ensuring a stress-free experience. Our home is not just a structure; it's a reflection of our personality.",
+        "Choosing Archaxis for our dream home was the best decision we made. Their team's creativity and attention to detail turned our ideas into a living masterpiece. From the initial concept discussions to the final touches, Archaxis showcased unparalleled professionalism.",
     },
     {
       img: require("/src/images/person3.jpg"),
       name: "David Chambers",
       role: "Business Owner",
       quote:
-        "Choosing Archaxis for our dream home was the best decision we made. Their team's creativity and attention to detail turned our ideas into a living masterpiece. From the initial concept discussions to the final touches, Archaxis showcased unparalleled professionalism. The architects seamlessly blended modern design with our lifestyle preferences, creating a harmonious living space. They navigated challenges with grace, ensuring a stress-free experience. Our home is not just a structure; it's a reflection of our personality.",
+        "Choosing Archaxis for our dream home was the best decision we made. Their team's creativity and attention to detail turned our ideas into a living masterpiece. From the initial concept discussions to the final touches, Archaxis showcased unparalleled professionalism.",
     },
     {
       img: require("/src/images/person2.jpg"),
       name: "Lily Thompson",
       role: "Real Estate Agent",
       quote:
-        "Choosing Archaxis for our dream home was the best decision we made. Their team's creativity and attention to detail turned our ideas into a living masterpiece. From the initial concept discussions to the final touches, Archaxis showcased unparalleled professionalism. The architects seamlessly blended modern design with our lifestyle preferences, creating a harmonious living space. They navigated challenges with grace, ensuring a stress-free experience. Our home is not just a structure; it's a reflection of our personality.",
+        "Choosing Archaxis for our dream home was the best decision we made. Their team's creativity and attention to detail turned our ideas into a living masterpiece. From the initial concept discussions to the final touches, Archaxis showcased unparalleled professionalism.",
     },
   ],
 };
 
 const Testimonials: React.FC<TestimonialsProps> = ({ className }) => {
-  const [slideIndex, setSlideIndex] = useState(0);
-  const [isEnd, setIsEnd] = useState(null);
-  const [isBeginning, setIsBeginning] = useState(null);
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    if (sliderRef.current) {
-      const swiper = (sliderRef.current as any).swiper;
-      if (swiper) {
-        setIsEnd(swiper.isEnd);
-        setIsBeginning(swiper.isBeginning);
-      }
-    }
-  }, []);
-
-  const prevHandler = () => {
-    console.log("Prev clicked");
-    if (!sliderRef.current) return;
-    (sliderRef.current as any).swiper.slidePrev();
-  };
-
-  const nextHandler = () => {
-    console.log("Next clicked");
-    if (!sliderRef.current) return;
-    (sliderRef.current as any).swiper.slideNext();
-  };
-
   return (
     <section>
       <div className={`${className} overflow-hidden`}>
@@ -84,7 +57,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ className }) => {
                       },
                     }}
                     viewport={{ once: true }}
-                    className="tracking-[3px] text-xl mb-4 inline-block text-gray-500"
+                    className="tracking-[3px] uppercase text-md mb-4 inline-block text-gray-500"
                   >
                     {testimonialsContent.heading.subtitle}
                   </motion.span>
@@ -130,24 +103,26 @@ const Testimonials: React.FC<TestimonialsProps> = ({ className }) => {
                     className="w-full cursor-pointer"
                     key={testimonial.name}
                   >
-                    <div className="block md:flex overflow-y-visible mt-4 items-stretch bg-white">
+                    <div className="block md:flex overflow-y-visible items-stretch bg-white">
                       <div className="md:w-4/12 md:flex md:items-center">
                         <Image
-                          width={300}
-                          height={300}
+                          width={500}
+                          height={500}
                           src={testimonial.img}
                           alt={testimonial.name}
                           className="object-cover object-center !h-full !w-full"
                         />
                       </div>
 
-                      <div className="md:w-8/12 p-4 md:p-16 flex items-center mt-8">
-                        <div className="flex flex-col">
-                          <blockquote className="lg:text-lg sm:text-xs md:text-base mb-4 text-lg">
-                            <span className="lg:text-9xl md:text-4xl sm:text-2xl mr-4 leading-[0] relative text-green-600">
+                      <div className="md:w-8/12 md:p-8 lg:p-16 flex items-center">
+                        <div className="flex flex-col mt-4">
+                          <blockquote className="mb-4 text-lg">
+                            <span className="text-green-600 lg:text-7xl md:text-6xl sm:text-4xl">
                               &ldquo;
                             </span>
-                            {testimonial.quote}
+                            <span className="lg:text-2xl md:text-base sm:text-xs">
+                              {testimonial.quote}
+                            </span>
                           </blockquote>
                           <div className="flex space-x-3 text-sm mt-6">
                             <strong>{testimonial.name}</strong>
@@ -155,7 +130,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ className }) => {
                             <span>{testimonial.role}</span>
                           </div>
                         </div>
-                        <div className="ml-16 flex items-center gap-2">
+                        <div className="ml-16  items-center gap-2 hidden lg:flex">
                           Swipe
                           <ArrowRight className="w-4 h-4" />
                         </div>

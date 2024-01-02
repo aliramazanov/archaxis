@@ -13,3 +13,5 @@ Welcome to archaxis, a landing page designed for an architectural company. This 
 - **Accessibility**: For accessibility HeadlessUI used, which provides inclusive experience for all users.
 
 - **Fully TypeScript**: The entire project is developed using TypeScript, ensuring code integrity through static typing.
+
+- **Contentlayer**: Contentlayer doesn't fully supported by Next.js 14, so MDX content created manually. Will be fixed...
