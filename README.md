@@ -14,4 +14,6 @@ Welcome to archaxis, a landing page designed for an architectural company. This 
 
 - **Fully TypeScript**: The entire project is developed using TypeScript, ensuring code integrity through static typing.
 
-- **Contentlayer**: Contentlayer doesn't fully supported by Next.js 14, so MDX content created manually. Will be fixed...
+- **ContentLayer Integration**: Seamlessly manage and update website content with ContentLayer, ensuring easy updates without code interference.
+
+- **MDX Support**: Enhance content creation flexibility with MDX, enabling the embedding of React components within Markdown content.
