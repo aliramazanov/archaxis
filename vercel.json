@@ -1,0 +1,13 @@
+{
+  "version": 33,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "maxLambdaSize": "50mb"
+      },
+      "buildCommand": "npm install --force && npm run build"
+    }
+  ]
+}
