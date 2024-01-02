@@ -1,10 +1,10 @@
 # archaxis
 
-Welcome to archaxis, a landing page designed for an architectural company. This project leverages the power of Next.js version 14.0.4 as its foundation. To enhance the user experience and visual appeal, HeadlessUI, Framer Motion, and Tailwind CSS has been used.
+Welcome to archaxis, a landing page designed for an architectural company. This project leverages the power of Next.js version 13.5 as its foundation. To enhance the user experience and visual appeal, HeadlessUI, Framer Motion, and Tailwind CSS has been used.
 
 ## Key Features
 
-- **Next.js 14.0.4**: The project is built on the latest version of Next.js, ensuring a robust and efficient web application.
+- **Next.js 13.5.6**: The project is built on the current version of Next.js, ensuring a robust and efficient web application.
 
 - **Styling with Tailwind CSS**: Tailwind CSS is employed to create a modern and responsive design and to increase productivity.
 
