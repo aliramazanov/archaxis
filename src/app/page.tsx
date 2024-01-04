@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <About className="py-16 lg:py-32 overflow-hidden" />
       <Works className="py-16 lg:py-16 md:mb-16" />
       <Testimonials className="py-16 lg:py-20" />
-      <Blog className="py-16 lg:py-28 mb-32" />
+      <Blog className="py-16 lg:py-28 mb-20" />
       <StayInTouch className="py-16 pt-32 -mt-32 lg:py-28 bg-green-700" />
       <Footer className="py-16 bg-white md:py-20" />
     </React.Fragment>
