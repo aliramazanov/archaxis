@@ -1,9 +1,10 @@
-import React from "react";
 import About from "@/components/About";
-import Hero from "@/components/Hero";
-import Works from "@/components/Works";
-import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
+import Hero from "@/components/Hero";
+import StayInTouch from "@/components/StayInTouch";
+import Testimonials from "@/components/Testimonials";
+import Works from "@/components/Works";
+import React from "react";
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <Works className="py-16 lg:py-16 md:mb-16" />
       <Testimonials className="py-16 lg:py-20" />
       <Blog className="py-16 lg:py-28" />
+      <StayInTouch className="py-16 pt-32 -mt-32 lg:py-28 bg-green-700" />
     </React.Fragment>
   );
 };

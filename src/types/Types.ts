@@ -16,6 +16,9 @@ export interface TestimonialsProps {
 export interface BlogProps {
   className?: string;
 }
+export interface StayInTouchProps {
+  className?: string;
+}
 
 export interface NavMenuItem {
   href: string;
