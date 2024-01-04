@@ -4,7 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const navMenu: NavMenuItem[] = [
   { href: "/", label: "home" },
@@ -42,33 +42,35 @@ const Navigation: React.FC = () => {
 
   return (
     <React.Fragment>
-      <header role="banner" className="py-10 absolute w-full z-[3]">
-        <div className="container px-4 mx-auto flex items-center justify-between">
-          <div>
-            <Link href={"/"} className="text-[22px] text-gray-800 font-bold">
-              archaxis<span className="text-green-600">.</span>
-            </Link>
-          </div>
-          <div className="flex">
-            <ul className="hidden md:flex space-x-8" role="list">
-              {navMenu.map((menu) => (
-                <li key={menu.label}>
-                  <Link
-                    href={menu.href}
-                    className={`text-gray-800 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-green-600 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 before:scale-y-[1] before:scale-z-[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] hover:before:scale-y-[1] hover:before:scale-z-[1] text-[14px] tracking-[2px] font-semibold pb-2`}
-                  >
-                    {menu.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <button
-              className="md:hidden text-md"
-              onClick={() => setOpen(true)}
-              type="button"
-            >
-              Menu
-            </button>
+      <header role="banner">
+        <div className="py-10 absolute w-full z-[3]">
+          <div className="container px-4 mx-auto flex items-center justify-between">
+            <div>
+              <Link href={"/"} className="text-[22px] text-gray-800 font-bold">
+                archaxis<span className="text-green-600">.</span>
+              </Link>
+            </div>
+            <div className="flex">
+              <ul className="hidden md:flex space-x-8" role="list">
+                {navMenu.map((menu) => (
+                  <li key={menu.label}>
+                    <Link
+                      href={menu.href}
+                      className={`text-gray-800 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-green-600 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 before:scale-y-[1] before:scale-z-[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] hover:before:scale-y-[1] hover:before:scale-z-[1] text-[14px] tracking-[2px] font-semibold pb-2`}
+                    >
+                      {menu.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <button
+                className="md:hidden text-md"
+                onClick={() => setOpen(true)}
+                type="button"
+              >
+                Menu
+              </button>
+            </div>
           </div>
         </div>
       </header>

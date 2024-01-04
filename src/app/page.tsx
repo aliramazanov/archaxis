@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Blog from "@/components/Blog";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import StayInTouch from "@/components/StayInTouch";
 import Testimonials from "@/components/Testimonials";
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <Testimonials className="py-16 lg:py-20" />
       <Blog className="py-16 lg:py-28" />
       <StayInTouch className="py-16 pt-32 -mt-32 lg:py-28 bg-green-700" />
+      <Footer className="py-16 bg-white md:py-20" />
     </React.Fragment>
   );
 };

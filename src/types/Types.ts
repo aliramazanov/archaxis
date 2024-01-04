@@ -19,6 +19,9 @@ export interface BlogProps {
 export interface StayInTouchProps {
   className?: string;
 }
+export interface FooterProps {
+  className?: string;
+}
 
 export interface NavMenuItem {
   href: string;

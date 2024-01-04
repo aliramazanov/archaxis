@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { BlogProps, PostCardProps } from "@/types/Types";
 import { allPosts } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { BlogProps, PostCardProps } from "@/types/Types";
+import Link from "next/link";
+import React from "react";
 
 const blogContent = {
   heading: {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ArrowRight from "./Icons/ArrowRight";
+import ArrowRight from "./ArrowRight";
 
 const testimonialsContent = {
   heading: {

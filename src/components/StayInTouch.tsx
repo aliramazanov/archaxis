@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
 import { StayInTouchProps } from "@/types/Types";
 import { motion } from "framer-motion";
+import React from "react";
 import { BiSolidPaperPlane } from "react-icons/bi";
 
 const stiContent = {

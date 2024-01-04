@@ -11,7 +11,7 @@ import {
   BiOutline,
   BiPaintRoll,
 } from "react-icons/bi";
-import ArrowRight from "./Icons/ArrowRight";
+import ArrowRight from "./ArrowRight";
 
 const worksContent = {
   heading: {
