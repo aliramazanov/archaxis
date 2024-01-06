@@ -112,7 +112,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 style={{ y: imgScroll, marginTop: "4rem" }}
-                className="z-[1] relative bg-cover bg-center"
+                className="z-[1] max-w-[600px] relative bg-cover bg-center"
               >
                 <Image
                   src={require("/src/images/hero.jpg")}

@@ -16,34 +16,10 @@ const navMenu: NavMenuItem[] = [
 
 const Navigation: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const pathname: string = usePathname();
-  const [windowDimensions, setWindowDimensions] = useState<{
-    height: number;
-    width: number;
-  }>({
-    height: typeof window !== "undefined" ? window.innerHeight : 0,
-    width: typeof window !== "undefined" ? window.innerWidth : 0,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <React.Fragment>
       <header role="banner">
-        <div className="py-10 absolute w-full z-[3]">
+        <div className="py-8 px-16 absolute w-full z-[3]">
           <div className="container px-4 mx-auto flex items-center justify-between">
             <div>
               <Link href={"/"} className="text-[22px] text-gray-800 font-bold">

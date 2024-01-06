@@ -10,7 +10,7 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <React.Fragment>
-      <Hero className="pt-32 pb-0 lg:pb-10" />
+      <Hero className="pt-48 pb-0 lg:pb-10" />
       <About className="py-16 lg:py-32 overflow-hidden" />
       <Works className="py-16 lg:py-16 md:mb-16" />
       <Testimonials className="py-16 lg:py-20" />

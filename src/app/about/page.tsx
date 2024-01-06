@@ -1,13 +1,11 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/about/Hero";
 import React from "react";
 
 const page = () => {
   return (
-    <section>
-      <div className="">
-        <span className="">About</span>
-      </div>
-    </section>
+    <React.Fragment>
+      <Hero className="pt-52 pb-20" />
+    </React.Fragment>
   );
 };
 
