@@ -1,7 +1,7 @@
-import { ArrowProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import React from "react";
 
-const ArrowRight: React.FC<ArrowProps> = ({ className }) => {
+const ArrowRight: React.FC<PropTypes> = ({ className }) => {
   return (
     <React.Fragment>
       <svg

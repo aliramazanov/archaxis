@@ -1,5 +1,5 @@
 "use client";
-import { WorkProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
@@ -99,7 +99,7 @@ const worksContent = {
   ],
 };
 
-const Works: React.FC<WorkProps> = ({ className }) => {
+const Works: React.FC<PropTypes> = ({ className }) => {
   return (
     <React.Fragment>
       <section>

@@ -1,5 +1,5 @@
 "use client";
-import { HeroProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +16,7 @@ const heroContent = {
   },
 };
 
-const Hero: React.FC<HeroProps> = ({ className }) => {
+const Hero: React.FC<PropTypes> = ({ className }) => {
   const ref: LegacyRef<HTMLDivElement> | undefined = useRef(null);
 
   const { scrollYProgress } = useScroll({

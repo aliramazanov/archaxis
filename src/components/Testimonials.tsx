@@ -1,8 +1,8 @@
 "use client";
-import { TestimonialsProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { ComponentProps } from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ArrowRight from "./ArrowRight";
@@ -37,7 +37,7 @@ const testimonialsContent = {
   ],
 };
 
-const Testimonials: React.FC<TestimonialsProps> = ({ className }) => {
+const Testimonials: React.FC<PropTypes> = ({ className }) => {
   return (
     <section>
       <div className={`${className} overflow-hidden`}>

@@ -1,5 +1,5 @@
 "use client";
-import { StayInTouchProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import { motion } from "framer-motion";
 import React from "react";
 import { BiSolidPaperPlane } from "react-icons/bi";
@@ -16,7 +16,7 @@ const stiContent = {
   },
 };
 
-const StayInTouch: React.FC<StayInTouchProps> = ({ className }) => {
+const StayInTouch: React.FC<PropTypes> = ({ className }) => {
   return (
     <section>
       <div className={`${className}`}>

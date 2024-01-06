@@ -1,5 +1,5 @@
 "use client";
-import { AboutProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,7 +24,7 @@ const aboutContent = {
   },
 };
 
-const About: React.FC<AboutProps> = ({ className }) => {
+const About: React.FC<PropTypes> = ({ className }) => {
   const ref: LegacyRef<HTMLDivElement> | undefined = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref as RefObject<HTMLElement>,

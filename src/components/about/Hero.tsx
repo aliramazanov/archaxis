@@ -1,5 +1,5 @@
 "use client";
-import { HeroProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -10,7 +10,7 @@ const aboutContent = {
   },
 };
 
-const Hero: React.FC<HeroProps> = ({ className }) => {
+const Hero: React.FC<PropTypes> = ({ className }) => {
   return (
     <section>
       <div className={className}>

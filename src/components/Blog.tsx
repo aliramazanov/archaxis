@@ -1,5 +1,5 @@
 "use client";
-import { BlogProps, PostCardProps } from "@/types/Types";
+import { PropTypes, PostCardProps } from "@/types/Types";
 import { allPosts } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
 import { motion } from "framer-motion";
@@ -62,7 +62,7 @@ const PostCard: React.FC<PostCardProps> = ({ index, post }) => {
   );
 };
 
-const Blog: React.FC<BlogProps> = ({ className }) => {
+const Blog: React.FC<PropTypes> = ({ className }) => {
   const post = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );

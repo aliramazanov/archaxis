@@ -1,5 +1,5 @@
 "use client";
-import { FooterProps } from "@/types/Types";
+import { PropTypes } from "@/types/Types";
 import Link from "next/link";
 import React from "react";
 import { BiSolidHeart } from "react-icons/bi";
@@ -105,7 +105,7 @@ const Copyright = () => {
   );
 };
 
-const Footer: React.FC<FooterProps> = ({ className }) => {
+const Footer: React.FC<PropTypes> = ({ className }) => {
   return (
     <footer>
       <div className={`${className} overflow-hidden w-full h-full relative`}>
