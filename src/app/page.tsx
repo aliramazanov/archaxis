@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       <Testimonials className="py-16 lg:py-20" />
       <Blog className="py-16 lg:py-28 mb-20" />
       <StayInTouch className="py-16 pt-32 -mt-32 lg:py-28 bg-green-700" />
-      <Footer className="py-16 bg-white md:py-20" />
+      <Footer className="py-16 bg-white md:py-20 px-16" />
     </React.Fragment>
   );
 };
