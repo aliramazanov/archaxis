@@ -9,35 +9,35 @@ import { PropTypes } from "@/types/Types";
 
 const teamContent = {
   heading: {
-    title: "archaxis. Architecture",
+    title: "archaxis",
     subtitle: "Innovative Design for a Transformative Future",
     desc: "Unleashing the Power of Creativity in Architectural Excellence",
   },
   team: [
     {
       image: "/person1.jpg",
-      name: "Jane Moore",
+      name: "Harvey Specter",
       role: "Principal Architect",
       twitter: "twitter.com",
       linkedin: "linkedin.com",
     },
     {
-      image: "/person2.jpg",
-      name: "Alexandra Darya",
-      role: "CEO & Head of Architecture",
-      twitter: "twitter.com",
-      linkedin: "linkedin.com",
-    },
-    {
       image: "/person3.jpg",
-      name: "Billy Specter",
+      name: "Donna Paulsen",
       role: "Head of Engineering",
       twitter: "twitter.com",
       linkedin: "linkedin.com",
     },
     {
+      image: "/person6.jpg",
+      name: "Jane Palvin",
+      role: "Design Architect",
+      twitter: "twitter.com",
+      linkedin: "linkedin.com",
+    },
+    {
       image: "/person4.jpg",
-      name: "John Doe",
+      name: "Rachel Zane",
       role: "Design Architect",
       twitter: "twitter.com",
       linkedin: "linkedin.com",
@@ -45,14 +45,14 @@ const teamContent = {
     {
       image: "/person5.jpg",
       name: "John Doe",
-      role: "Design Architect",
+      role: "Enginner & Field Architect",
       twitter: "twitter.com",
       linkedin: "linkedin.com",
     },
     {
-      image: "/person6.jpg",
-      name: "Jane Doe",
-      role: "Design Architect",
+      image: "/person2.jpg",
+      name: "Alexandra Darya",
+      role: "CEO & Head of Architecture",
       twitter: "twitter.com",
       linkedin: "linkedin.com",
     },
@@ -99,6 +99,7 @@ const Team: React.FC<PropTypes> = ({ className }) => {
                     className="text-2xl lg:text-4xl"
                   >
                     {teamContent.heading.title}
+                    <span className=" lg:text-4xl text-green-500">.</span>
                   </motion.h2>
                 )}
               </div>
@@ -115,7 +116,7 @@ const Team: React.FC<PropTypes> = ({ className }) => {
                       },
                     }}
                     viewport={{ once: true }}
-                    className="text-gray-500"
+                    className="text-gray-500 text-2xl"
                   >
                     {teamContent.heading.desc}
                   </motion.p>
@@ -147,7 +148,7 @@ const Team: React.FC<PropTypes> = ({ className }) => {
                       height={600}
                       src={person.image}
                       alt="Person"
-                      className="object-cover object-top w-full !max-h-72 !max-w-full"
+                      className="object-cover object-top w-full max-h-72 max-w-full duration-300 transition-all ease-in-out group hover:scale-105"
                     />
                   </Link>
                   <div className="p-8">
