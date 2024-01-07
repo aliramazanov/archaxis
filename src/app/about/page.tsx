@@ -1,3 +1,4 @@
+import StayInTouch from "@/components/StayInTouch";
 import Testimonials from "@/components/Testimonials";
 import Hero from "@/components/about/Hero";
 import Story from "@/components/about/Story";
@@ -12,7 +13,8 @@ const page = () => {
       <Story className="" />
       <WhyUs className="pt-32 pb-0" />
       <Testimonials className="py-16 lg:py-20" />
-      <Team className="" />
+      <Team className="py-16" />
+      <StayInTouch className="py-16 pt-32 mt-10 lg:py-28 bg-green-700" />
     </React.Fragment>
   );
 };

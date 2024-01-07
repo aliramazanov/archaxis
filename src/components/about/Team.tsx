@@ -64,7 +64,7 @@ const Team: React.FC<PropTypes> = ({ className }) => {
     <section>
       <div className={className}>
         <div className="container px-4 mx-auto">
-          <div className="lg:flex justify-center mb-4 lg:mb-28 lg:mt-8">
+          <div className="lg:flex justify-center mb-4 lg:mb-28">
             <div className="w-full lg:w-8/12 lg:flex gap-7 items-center">
               <div className="lg:w-7/12 mb-5 lg:mb-0">
                 {teamContent.heading.subtitle && (
