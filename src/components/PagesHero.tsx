@@ -1,23 +1,16 @@
 "use client";
-import { PropTypes } from "@/types/Types";
+import { HeroTypes } from "@/types/Types";
 import { motion } from "framer-motion";
 import React from "react";
 
-const aboutContent = {
-  heading: {
-    title: "Shaping Tomorrow's Terrain with Today's Visionary Blueprint",
-    subtitle: "About Us",
-  },
-};
-
-const Hero: React.FC<PropTypes> = ({ className }) => {
+const Hero: React.FC<HeroTypes> = ({ className, title, subtitle }) => {
   return (
     <section>
       <div className={className}>
         <div className="container px-4 mx-auto">
           <div className="lg:flex w-full lg:w-10/12 mx-auto items-center justify-between">
             <div className="text-center lg:max-w-4xl mx-auto">
-              {aboutContent.heading.subtitle && (
+              {subtitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -31,10 +24,10 @@ const Hero: React.FC<PropTypes> = ({ className }) => {
                   viewport={{ once: true }}
                   className="uppercase tracking-[3px] text-xs text-gray-500 mb-5 inline-block"
                 >
-                  {aboutContent.heading.subtitle}
+                  {subtitle}
                 </motion.span>
               )}
-              {aboutContent.heading.title && (
+              {title && (
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -48,7 +41,7 @@ const Hero: React.FC<PropTypes> = ({ className }) => {
                   viewport={{ once: true }}
                   className="text-3xl sm:text-4xl md:text-5xl"
                 >
-                  {aboutContent.heading.title}
+                  {title}
                 </motion.h1>
               )}
             </div>
