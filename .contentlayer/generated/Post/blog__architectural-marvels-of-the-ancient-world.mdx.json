@@ -1,0 +1,35 @@
+{
+  "title": "Architectural Marvels of the Ancient World",
+  "excerpt": "Ancient civilizations left behind awe-inspiring architectural wonders that continue to captivate us today. ",
+  "date": "2023-04-17T00:00:00.000Z",
+  "image": "/project1.jpg",
+  "author": "JoefreyCodes",
+  "categories": [
+    {
+      "type": "Category",
+      "_raw": {}
+    },
+    {
+      "type": "Category",
+      "_raw": {}
+    },
+    {
+      "type": "Category",
+      "_raw": {}
+    }
+  ],
+  "body": {
+    "raw": "\nAncient civilizations left behind awe-inspiring architectural wonders that continue to captivate us today. This blog post takes you on a virtual tour of these remarkable structures, from the Great Pyramid of Giza to the Parthenon in Athens. Discover the ingenious engineering and cultural significance behind these enduring masterpieces.\n\nExplore the secrets of construction and design that allowed these ancient architects to create monumental structures that have stood the test of time. We'll delve into the symbolism, purpose, and historical context of these architectural marvels, shedding light on the incredible achievements of our ancestors.\n",
+    "code": "var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),x=(t,e)=>{for(var i in e)o(t,i,{get:e[i],enumerable:!0})},a=(t,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!g.call(t,r)&&r!==i&&o(t,r,{get:()=>e[r],enumerable:!(s=d(e,r))||s.enumerable});return t};var v=(t,e,i)=>(i=t!=null?u(p(t)):{},a(e||!t||!t.__esModule?o(i,\"default\",{value:t,enumerable:!0}):i,t)),b=t=>a(o({},\"__esModule\",{value:!0}),t);var h=f((M,c)=>{c.exports=_jsx_runtime});var _={};x(_,{default:()=>w,frontmatter:()=>j});var n=v(h()),j={title:\"Architectural Marvels of the Ancient World\",excerpt:\"Ancient civilizations left behind awe-inspiring architectural wonders that continue to captivate us today. \",date:\"2023-04-17\",author:\"JoefreyCodes\",categories:[{title:\"Interior\"},{title:\"News\"},{title:\"Architecture\"}],type:\"Post\",image:\"/project1.jpg\"};function l(t){let e=Object.assign({p:\"p\"},t.components);return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"Ancient civilizations left behind awe-inspiring architectural wonders that continue to captivate us today. This blog post takes you on a virtual tour of these remarkable structures, from the Great Pyramid of Giza to the Parthenon in Athens. Discover the ingenious engineering and cultural significance behind these enduring masterpieces.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Explore the secrets of construction and design that allowed these ancient architects to create monumental structures that have stood the test of time. We'll delve into the symbolism, purpose, and historical context of these architectural marvels, shedding light on the incredible achievements of our ancestors.\"})]})}function y(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(l,t)})):l(t)}var w=y;return b(_);})();\n;return Component;"
+  },
+  "_id": "blog/architectural-marvels-of-the-ancient-world.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/architectural-marvels-of-the-ancient-world.mdx",
+    "sourceFileName": "architectural-marvels-of-the-ancient-world.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/architectural-marvels-of-the-ancient-world"
+  },
+  "type": "Post",
+  "url": "/blog/architectural-marvels-of-the-ancient-world"
+}

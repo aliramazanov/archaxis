@@ -1,0 +1,35 @@
+{
+  "title": "The Evolution of Sustainable Design",
+  "excerpt": "Sustainable design has come a long way since its inception. This post explores the history of sustainable architecture, from early passive design strategies to contemporary green building practices. ",
+  "date": "2023-03-10T00:00:00.000Z",
+  "image": "/project1.jpg",
+  "author": "JoefreyCodes",
+  "categories": [
+    {
+      "type": "Category",
+      "_raw": {}
+    },
+    {
+      "type": "Category",
+      "_raw": {}
+    },
+    {
+      "type": "Category",
+      "_raw": {}
+    }
+  ],
+  "body": {
+    "raw": "\nSustainable design has come a long way since its inception. This post explores the history of sustainable architecture, from early passive design strategies to contemporary green building practices. Discover how architects have integrated eco-friendly materials, renewable energy sources, and innovative technologies to create buildings that minimize environmental impact.\n\nAs we delve into the evolution of sustainable design, you'll gain insights into iconic green buildings, such as the Sydney Opera House and the Bullitt Center. Learn how these projects have set new standards for sustainability and continue to inspire architects worldwide.\n",
+    "code": "var Component=(()=>{var h=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var y=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),b=(e,t)=>{for(var i in t)o(e,i,{get:t[i],enumerable:!0})},r=(e,t,i,a)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let s of d(t))!m.call(e,s)&&s!==i&&o(e,s,{get:()=>t[s],enumerable:!(a=u(t,s))||a.enumerable});return e};var f=(e,t,i)=>(i=e!=null?h(p(e)):{},r(t||!e||!e.__esModule?o(i,\"default\",{value:e,enumerable:!0}):i,e)),v=e=>r(o({},\"__esModule\",{value:!0}),e);var l=y((C,c)=>{c.exports=_jsx_runtime});var _={};b(_,{default:()=>w,frontmatter:()=>x});var n=f(l()),x={title:\"The Evolution of Sustainable Design\",excerpt:\"Sustainable design has come a long way since its inception. This post explores the history of sustainable architecture, from early passive design strategies to contemporary green building practices. \",date:\"2023-03-10\",author:\"JoefreyCodes\",categories:[{title:\"Interior\"},{title:\"Design\"},{title:\"Renovation\"}],type:\"Post\",image:\"/project1.jpg\"};function g(e){let t=Object.assign({p:\"p\"},e.components);return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t.p,{children:\"Sustainable design has come a long way since its inception. This post explores the history of sustainable architecture, from early passive design strategies to contemporary green building practices. Discover how architects have integrated eco-friendly materials, renewable energy sources, and innovative technologies to create buildings that minimize environmental impact.\"}),`\n`,(0,n.jsx)(t.p,{children:\"As we delve into the evolution of sustainable design, you'll gain insights into iconic green buildings, such as the Sydney Opera House and the Bullitt Center. Learn how these projects have set new standards for sustainability and continue to inspire architects worldwide.\"})]})}function j(e={}){let{wrapper:t}=e.components||{};return t?(0,n.jsx)(t,Object.assign({},e,{children:(0,n.jsx)(g,e)})):g(e)}var w=j;return v(_);})();\n;return Component;"
+  },
+  "_id": "blog/the-evolution-of-sustainable-design.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/the-evolution-of-sustainable-design.mdx",
+    "sourceFileName": "the-evolution-of-sustainable-design.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/the-evolution-of-sustainable-design"
+  },
+  "type": "Post",
+  "url": "/blog/the-evolution-of-sustainable-design"
+}

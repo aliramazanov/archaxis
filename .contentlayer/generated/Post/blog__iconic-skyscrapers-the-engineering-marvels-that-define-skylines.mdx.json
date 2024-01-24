@@ -1,0 +1,31 @@
+{
+  "title": "The Role of Technology in Contemporary Architecture",
+  "excerpt": "Technology is transforming the field of architecture in unprecedented ways. In this blog post, we'll explore how cutting-edge tools like 3D printing, virtual reality, and parametric design ",
+  "date": "2023-05-21T00:00:00.000Z",
+  "image": "/project3.jpg",
+  "author": "JoefreyCodes",
+  "categories": [
+    {
+      "type": "Category",
+      "_raw": {}
+    },
+    {
+      "type": "Category",
+      "_raw": {}
+    }
+  ],
+  "body": {
+    "raw": "\nTechnology is transforming the field of architecture in unprecedented ways. In this blog post, we'll explore how cutting-edge tools like 3D printing, virtual reality, and parametric design are revolutionizing architectural practices. Dive into case studies of projects that have harnessed technology to push the boundaries of what's possible in design.\n\nWe'll also examine the sustainability aspect, exploring how architects are using technology to create energy-efficient buildings and reduce the industry's carbon footprint. From intelligent building management systems to AI-driven design optimization, discover the latest tech trends shaping the future of architecture.\n",
+    "code": "var Component=(()=>{var g=Object.create;var r=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var f=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var i in t)r(e,i,{get:t[i],enumerable:!0})},a=(e,t,i,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of p(t))!m.call(e,o)&&o!==i&&r(e,o,{get:()=>t[o],enumerable:!(s=d(t,o))||s.enumerable});return e};var x=(e,t,i)=>(i=e!=null?g(u(e)):{},a(t||!e||!e.__esModule?r(i,\"default\",{value:e,enumerable:!0}):i,e)),b=e=>a(r({},\"__esModule\",{value:!0}),e);var l=f((D,c)=>{c.exports=_jsx_runtime});var _={};y(_,{default:()=>v,frontmatter:()=>j});var n=x(l()),j={title:\"The Role of Technology in Contemporary Architecture\",excerpt:\"Technology is transforming the field of architecture in unprecedented ways. In this blog post, we'll explore how cutting-edge tools like 3D printing, virtual reality, and parametric design \",date:\"2023-05-21\",author:\"JoefreyCodes\",categories:[{title:\"Civic & Public\"},{title:\"Landscape\"}],type:\"Post\",image:\"/project3.jpg\"};function h(e){let t=Object.assign({p:\"p\"},e.components);return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t.p,{children:\"Technology is transforming the field of architecture in unprecedented ways. In this blog post, we'll explore how cutting-edge tools like 3D printing, virtual reality, and parametric design are revolutionizing architectural practices. Dive into case studies of projects that have harnessed technology to push the boundaries of what's possible in design.\"}),`\n`,(0,n.jsx)(t.p,{children:\"We'll also examine the sustainability aspect, exploring how architects are using technology to create energy-efficient buildings and reduce the industry's carbon footprint. From intelligent building management systems to AI-driven design optimization, discover the latest tech trends shaping the future of architecture.\"})]})}function w(e={}){let{wrapper:t}=e.components||{};return t?(0,n.jsx)(t,Object.assign({},e,{children:(0,n.jsx)(h,e)})):h(e)}var v=w;return b(_);})();\n;return Component;"
+  },
+  "_id": "blog/iconic-skyscrapers-the-engineering-marvels-that-define-skylines.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/iconic-skyscrapers-the-engineering-marvels-that-define-skylines.mdx",
+    "sourceFileName": "iconic-skyscrapers-the-engineering-marvels-that-define-skylines.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/iconic-skyscrapers-the-engineering-marvels-that-define-skylines"
+  },
+  "type": "Post",
+  "url": "/blog/iconic-skyscrapers-the-engineering-marvels-that-define-skylines"
+}
