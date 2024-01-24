@@ -1,1 +1,117 @@
-[]
+[
+  {
+    "title": "Contemporary Beachfront Villa",
+    "location": "Miami, FL",
+    "date": "2019-01-23T00:00:00.000Z",
+    "image": "/project1.jpg",
+    "client": "David Anderson",
+    "role": "Interior Design",
+    "year": "2019",
+    "body": {
+      "raw": "\n## The Client\n\nDavid, a real estate investor, entrusted us with the design of a luxurious beachfront villa. His vision included a sleek, contemporary design with expansive windows to maximize views of the ocean while maintaining privacy and security.\n\n## The Challenge\n\nNullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\n\n## The Solution\n\nCurabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\n",
+      "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var h=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var v=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),f=(i,e)=>{for(var n in e)r(i,n,{get:e[n],enumerable:!0})},s=(i,e,n,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of p(e))!g.call(i,a)&&a!==n&&r(i,a,{get:()=>e[a],enumerable:!(u=d(e,a))||u.enumerable});return i};var x=(i,e,n)=>(n=i!=null?m(h(i)):{},s(e||!i||!i.__esModule?r(n,\"default\",{value:i,enumerable:!0}):n,i)),b=i=>s(r({},\"__esModule\",{value:!0}),i);var o=v((_,l)=>{l.exports=_jsx_runtime});var y={};f(y,{default:()=>w,frontmatter:()=>j});var t=x(o()),j={title:\"Contemporary Beachfront Villa\",type:\"Project\",date:\"2019-01-23\",image:\"/project1.jpg\",location:\"Miami, FL\",year:\"2019\",role:\"Interior Design\",client:\"David Anderson\"};function c(i){let e=Object.assign({h2:\"h2\",p:\"p\"},i.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"The Client\"}),`\n`,(0,t.jsx)(e.p,{children:\"David, a real estate investor, entrusted us with the design of a luxurious beachfront villa. His vision included a sleek, contemporary design with expansive windows to maximize views of the ocean while maintaining privacy and security.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"The Challenge\"}),`\n`,(0,t.jsx)(e.p,{children:\"Nullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"The Solution\"}),`\n`,(0,t.jsx)(e.p,{children:\"Curabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\"})]})}function D(i={}){let{wrapper:e}=i.components||{};return e?(0,t.jsx)(e,Object.assign({},i,{children:(0,t.jsx)(c,i)})):c(i)}var w=D;return b(y);})();\n;return Component;"
+    },
+    "_id": "project/contemporary-beachfront-villa.mdx",
+    "_raw": {
+      "sourceFilePath": "project/contemporary-beachfront-villa.mdx",
+      "sourceFileName": "contemporary-beachfront-villa.mdx",
+      "sourceFileDir": "project",
+      "contentType": "mdx",
+      "flattenedPath": "project/contemporary-beachfront-villa"
+    },
+    "type": "Project",
+    "url": "/project/contemporary-beachfront-villa"
+  },
+  {
+    "title": "High-Tech Smart Home",
+    "location": "Seattle, WA",
+    "date": "2021-03-07T00:00:00.000Z",
+    "image": "/project2.jpg",
+    "client": "Jennifer Miller",
+    "role": "Interior Design",
+    "year": "2021",
+    "body": {
+      "raw": "\n## The Client\n\nJennifer wanted a futuristic, high-tech home that seamlessly integrated smart technologies for convenience, energy efficiency, and security. Her vision included voice-activated controls and automated systems throughout her residence.\n\n## The Challenge\n\nNullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\n\n## The Solution\n\nCurabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\n",
+      "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of d(e))!g.call(t,a)&&a!==n&&r(t,a,{get:()=>e[a],enumerable:!(u=h(e,a))||u.enumerable});return t};var x=(t,e,n)=>(n=t!=null?m(p(t)):{},s(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),b=t=>s(r({},\"__esModule\",{value:!0}),t);var c=f((M,l)=>{l.exports=_jsx_runtime});var C={};v(C,{default:()=>_,frontmatter:()=>j});var i=x(c()),j={title:\"High-Tech Smart Home\",type:\"Project\",date:\"2021-03-07\",image:\"/project2.jpg\",location:\"Seattle, WA\",year:\"2021\",role:\"Interior Design\",client:\"Jennifer Miller\"};function o(t){let e=Object.assign({h2:\"h2\",p:\"p\"},t.components);return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h2,{children:\"The Client\"}),`\n`,(0,i.jsx)(e.p,{children:\"Jennifer wanted a futuristic, high-tech home that seamlessly integrated smart technologies for convenience, energy efficiency, and security. Her vision included voice-activated controls and automated systems throughout her residence.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"The Challenge\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"The Solution\"}),`\n`,(0,i.jsx)(e.p,{children:\"Curabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\"})]})}function y(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,Object.assign({},t,{children:(0,i.jsx)(o,t)})):o(t)}var _=y;return b(C);})();\n;return Component;"
+    },
+    "_id": "project/high-tech-smart-home.mdx",
+    "_raw": {
+      "sourceFilePath": "project/high-tech-smart-home.mdx",
+      "sourceFileName": "high-tech-smart-home.mdx",
+      "sourceFileDir": "project",
+      "contentType": "mdx",
+      "flattenedPath": "project/high-tech-smart-home"
+    },
+    "type": "Project",
+    "url": "/project/high-tech-smart-home"
+  },
+  {
+    "title": "Modern Eco-Friendly Residence",
+    "location": "Los Angeles, CA",
+    "date": "2023-02-12T00:00:00.000Z",
+    "image": "/project3.jpg",
+    "client": "Sarah and John Smith",
+    "role": "Interior Design",
+    "year": "2023",
+    "body": {
+      "raw": "\n## The Client\n\nSarah and John approached our architectural firm with a vision for a sustainable, modern home that seamlessly blends with the California landscape. They were enthusiastic about incorporating eco-friendly materials and energy-efficient design principles into their dream home, making it a model of sustainability in their community.\n\n## The Challenge\n\nNullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\n\n## The Solution\n\nCurabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\n",
+      "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),b=(i,e)=>{for(var a in e)r(i,a,{get:e[a],enumerable:!0})},u=(i,e,a,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of d(e))!g.call(i,n)&&n!==a&&r(i,n,{get:()=>e[n],enumerable:!(s=h(e,n))||s.enumerable});return i};var v=(i,e,a)=>(a=i!=null?m(p(i)):{},u(e||!i||!i.__esModule?r(a,\"default\",{value:i,enumerable:!0}):a,i)),x=i=>u(r({},\"__esModule\",{value:!0}),i);var o=f((M,l)=>{l.exports=_jsx_runtime});var _={};b(_,{default:()=>C,frontmatter:()=>j});var t=v(o()),j={title:\"Modern Eco-Friendly Residence\",type:\"Project\",date:\"2023-02-12\",image:\"/project3.jpg\",location:\"Los Angeles, CA\",year:\"2023\",role:\"Interior Design\",client:\"Sarah and John Smith\"};function c(i){let e=Object.assign({h2:\"h2\",p:\"p\"},i.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"The Client\"}),`\n`,(0,t.jsx)(e.p,{children:\"Sarah and John approached our architectural firm with a vision for a sustainable, modern home that seamlessly blends with the California landscape. They were enthusiastic about incorporating eco-friendly materials and energy-efficient design principles into their dream home, making it a model of sustainability in their community.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"The Challenge\"}),`\n`,(0,t.jsx)(e.p,{children:\"Nullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"The Solution\"}),`\n`,(0,t.jsx)(e.p,{children:\"Curabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\"})]})}function y(i={}){let{wrapper:e}=i.components||{};return e?(0,t.jsx)(e,Object.assign({},i,{children:(0,t.jsx)(c,i)})):c(i)}var C=y;return x(_);})();\n;return Component;"
+    },
+    "_id": "project/modern-eco-friendly-residence.mdx",
+    "_raw": {
+      "sourceFilePath": "project/modern-eco-friendly-residence.mdx",
+      "sourceFileName": "modern-eco-friendly-residence.mdx",
+      "sourceFileDir": "project",
+      "contentType": "mdx",
+      "flattenedPath": "project/modern-eco-friendly-residence"
+    },
+    "type": "Project",
+    "url": "/project/modern-eco-friendly-residence"
+  },
+  {
+    "title": "Sustainable Office Building",
+    "location": "San Francisco, CA",
+    "date": "2022-05-15T00:00:00.000Z",
+    "image": "/project3.jpg",
+    "client": "Michael and Maria Rodriguez",
+    "role": "Interior Design",
+    "year": "2022",
+    "body": {
+      "raw": "\n## The Client\n\nMichael and Maria, co-founders of an eco-conscious tech startup, tasked us with designing their company's new headquarters. Their primary goal was to create an energy-efficient, sustainable office space that aligns with their company's green initiatives.\n\n## The Challenge\n\nNullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\n\n## The Solution\n\nCurabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\n",
+      "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var a in e)r(t,a,{get:e[a],enumerable:!0})},s=(t,e,a,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of h(e))!g.call(t,n)&&n!==a&&r(t,n,{get:()=>e[n],enumerable:!(u=p(e,n))||u.enumerable});return t};var v=(t,e,a)=>(a=t!=null?m(d(t)):{},s(e||!t||!t.__esModule?r(a,\"default\",{value:t,enumerable:!0}):a,t)),x=t=>s(r({},\"__esModule\",{value:!0}),t);var c=f((D,l)=>{l.exports=_jsx_runtime});var C={};b(C,{default:()=>y,frontmatter:()=>j});var i=v(c()),j={title:\"Sustainable Office Building\",type:\"Project\",date:\"2022-05-15\",image:\"/project3.jpg\",location:\"San Francisco, CA\",year:\"2022\",role:\"Interior Design\",client:\"Michael and Maria Rodriguez\"};function o(t){let e=Object.assign({h2:\"h2\",p:\"p\"},t.components);return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h2,{children:\"The Client\"}),`\n`,(0,i.jsx)(e.p,{children:\"Michael and Maria, co-founders of an eco-conscious tech startup, tasked us with designing their company's new headquarters. Their primary goal was to create an energy-efficient, sustainable office space that aligns with their company's green initiatives.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"The Challenge\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"The Solution\"}),`\n`,(0,i.jsx)(e.p,{children:\"Curabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\"})]})}function M(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,Object.assign({},t,{children:(0,i.jsx)(o,t)})):o(t)}var y=M;return x(C);})();\n;return Component;"
+    },
+    "_id": "project/sustainable-office-building.mdx",
+    "_raw": {
+      "sourceFilePath": "project/sustainable-office-building.mdx",
+      "sourceFileName": "sustainable-office-building.mdx",
+      "sourceFileDir": "project",
+      "contentType": "mdx",
+      "flattenedPath": "project/sustainable-office-building"
+    },
+    "type": "Project",
+    "url": "/project/sustainable-office-building"
+  },
+  {
+    "title": "Urban Loft Renovation",
+    "location": "New York City, NY",
+    "date": "2021-03-07T00:00:00.000Z",
+    "image": "/project4.jpg",
+    "client": "Emily Turner",
+    "role": "Interior Design",
+    "year": "2021",
+    "body": {
+      "raw": "\n## The Client\n\nEmily, a young professional, sought our expertise to transform her urban loft into a functional and stylish living space. Her desire was to create an open, light-filled environment that maximizes the use of the limited space available in the heart of Manhattan.\n\n## The Challenge\n\nNullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\n\n## The Solution\n\nCurabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\n",
+      "code": "var Component=(()=>{var c=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of h(e))!g.call(t,a)&&a!==n&&r(t,a,{get:()=>e[a],enumerable:!(u=p(e,a))||u.enumerable});return t};var b=(t,e,n)=>(n=t!=null?c(d(t)):{},s(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),x=t=>s(r({},\"__esModule\",{value:!0}),t);var o=f((M,l)=>{l.exports=_jsx_runtime});var _={};v(_,{default:()=>C,frontmatter:()=>j});var i=b(o()),j={title:\"Urban Loft Renovation\",type:\"Project\",date:\"2021-03-07\",image:\"/project4.jpg\",location:\"New York City, NY\",year:\"2021\",role:\"Interior Design\",client:\"Emily Turner\"};function m(t){let e=Object.assign({h2:\"h2\",p:\"p\"},t.components);return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h2,{children:\"The Client\"}),`\n`,(0,i.jsx)(e.p,{children:\"Emily, a young professional, sought our expertise to transform her urban loft into a functional and stylish living space. Her desire was to create an open, light-filled environment that maximizes the use of the limited space available in the heart of Manhattan.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"The Challenge\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nullam condimentum gravida turpis vel pulvinar. Duis ex ipsum, porttitor nec elementum mattis, ullamcorper ut enim. Proin vel nibh placerat, molestie magna facilisis, vehicula nunc. Proin pharetra vulputate justo, ut ullamcorper tellus bibendum a. Sed at faucibus sapien, eget lobortis mauris. Nunc suscipit enim ut est egestas, eu vulputate augue laoreet. Curabitur elementum urna at felis elementum suscipit.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"The Solution\"}),`\n`,(0,i.jsx)(e.p,{children:\"Curabitur sit amet accumsan ante. Duis quis gravida dui. Donec neque felis, congue eget orci in, maximus ullamcorper sem. Vivamus feugiat eu erat et fringilla. In elementum semper odio, a luctus ex ultricies vitae. Nullam pharetra ex urna, blandit gravida diam vestibulum sed. Mauris pharetra fringilla felis et dapibus.\"})]})}function y(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,Object.assign({},t,{children:(0,i.jsx)(m,t)})):m(t)}var C=y;return x(_);})();\n;return Component;"
+    },
+    "_id": "project/urban-loft-renovation.mdx",
+    "_raw": {
+      "sourceFilePath": "project/urban-loft-renovation.mdx",
+      "sourceFileName": "urban-loft-renovation.mdx",
+      "sourceFileDir": "project",
+      "contentType": "mdx",
+      "flattenedPath": "project/urban-loft-renovation"
+    },
+    "type": "Project",
+    "url": "/project/urban-loft-renovation"
+  }
+]

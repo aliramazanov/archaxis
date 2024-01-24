@@ -42,7 +42,7 @@ export type Project = {
   /** The date of the project */
   date: IsoDateTimeString
   /** The image of the project */
-  img: string
+  image: string
   /** The client of the project */
   client: string
   /** The role of the project */

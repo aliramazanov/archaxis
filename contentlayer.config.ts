@@ -64,7 +64,7 @@ const Category = defineNestedType(() => ({
 
 const Project = defineDocumentType(() => ({
   name: "Project",
-  filePathPattern: `projects/*.mdx`,
+  filePathPattern: `project/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
@@ -82,7 +82,7 @@ const Project = defineDocumentType(() => ({
       description: "The date of the project",
       required: true,
     },
-    img: {
+    image: {
       type: "string",
       description: "The image of the project",
       required: true,
@@ -106,7 +106,7 @@ const Project = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `${doc._raw.flattenedPath}`,
+      resolve: (doc) => `/${doc._raw.flattenedPath}`,
     },
   },
 }));

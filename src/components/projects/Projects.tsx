@@ -60,6 +60,7 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
   const items = allProjects.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
+  console.log(items);
 
   const [currentItems, setCurrentItems] = useState<string[]>([]);
   const [pageCount, setPageCount] = useState(0);
