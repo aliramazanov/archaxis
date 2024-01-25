@@ -27,7 +27,7 @@ const Items: React.FC<ItemTypes> = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="relative overflow-hidden w-full lg:6/12 p-2 group"
+              className="relative overflow-hidden w-full lg:w-6/12 p-2 group"
             >
               <Link
                 className="overflow-hidden block relative "
@@ -91,10 +91,11 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
   };
 
   if (!items) return null;
+
   return (
     <section className={className}>
       <div className="container px-4 mx-auto">
-        <div className="lg:w-10/12 mx-auto flex flex-wrap mb-10 ">
+        <div className="lg:w-10/12 mx-auto flex flex-wrap mb-10">
           <Items currentItems={currentItems} />
         </div>
         <div className="lg:w-10/12 mx-auto flex flex-wrap">

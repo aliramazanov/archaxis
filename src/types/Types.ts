@@ -5,7 +5,7 @@ export interface PropTypes {
 export interface CTATypes {
   className?: string;
   ctaLabel?: string;
-  ctaLink?: string;
+  ctaLink: string;
   ctaTitle?: string;
   desc?: string;
 }
