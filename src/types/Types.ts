@@ -47,3 +47,20 @@ export interface ProjectState {
   name: string;
   date: string;
 }
+
+export interface BlogCategory {
+  title: string;
+}
+
+export interface BlogProps {
+  className: string;
+  itemsPerPage: number;
+  archive?: boolean;
+  params: {
+    slug?: string;
+  };
+}
+
+export interface Category {
+  title: string;
+}

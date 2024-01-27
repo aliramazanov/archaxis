@@ -19,13 +19,14 @@ const storyContent = {
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
-        tailwind: "h-56 lg:h-96",
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: img2,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
     ],
   },
@@ -36,18 +37,21 @@ const storyContent = {
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: img4,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: img5,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
     ],
   },
@@ -58,12 +62,14 @@ const storyContent = {
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: post2,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
+        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
     ],
   },
@@ -128,7 +134,11 @@ const Story: React.FC<PropTypes> = ({ className }) => {
                     }}
                     viewport={{ once: true }}
                   >
-                    <Image alt={item.alt} src={item.img} />
+                    <Image
+                      alt={item.alt}
+                      src={item.img}
+                      className={`${item.tailwind}`}
+                    />
                   </motion.div>
                 );
               })}
@@ -150,7 +160,11 @@ const Story: React.FC<PropTypes> = ({ className }) => {
                     }}
                     viewport={{ once: true }}
                   >
-                    <Image alt={item.alt} src={item.img} />
+                    <Image
+                      alt={item.alt}
+                      src={item.img}
+                      className={`${item.tailwind}`}
+                    />
                   </motion.div>
                 );
               })}

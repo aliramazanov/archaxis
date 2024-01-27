@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import ReacrPaginate from "react-paginate";
+import ReactPaginate from "react-paginate";
 
 const Items: React.FC<ItemTypes> = ({ currentItems }) => {
   return (
@@ -34,7 +34,7 @@ const Items: React.FC<ItemTypes> = ({ currentItems }) => {
                 href={project.url}
               >
                 <Image
-                  className="object-cover object-center h-[400px] !max-w-full duration-300 transition-all ease-in-out group-hover:scale-105"
+                  className="object-cover object-center h-[400px] !max-w-full duration-300 transition-all ease-in-out group-hover:scale-105 "
                   src={project.image}
                   alt="Image"
                   width={1060}
@@ -99,7 +99,7 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
           <Items currentItems={currentItems} />
         </div>
         <div className="lg:w-10/12 mx-auto flex flex-wrap">
-          <ReacrPaginate
+          <ReactPaginate
             nextLabel="Next"
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}

@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pagination {
+  @apply mx-auto flex flex-wrap justify-between items-center space-x-0
+  md:space-x-2;
+}
+
+.pagination .disabled a {
+  @apply opacity-30 !cursor-pointer bg-gray-500
+  hover:shadow-xl hover:opacity-50;
+}
+
+.pagination li a {
+  @apply rounded-full w-10 h-10 inline-flex items-center justify-center transition-all duration-300 ease-in-out text-xs tracking-[2px] font-bold uppercase bg-green-600 py-4 px-5 text-white hover:bg-white hover:text-green-600 hover:shadow-2xl;
+}
+
+.pagination li.active a {
+  @apply bg-white shadow-2xl text-green-600;
+}
+
+.pagination li:first-child {
+  @apply !mr-2 md:!mr-5;
+}
+
+.pagination li:last-child {
+  @apply !mr-2 md:!mr-5;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+  @apply w-auto px-3 md:px-5;
+}
+
+.pagination li:last-child a {
+  @apply ml-6;
+}
