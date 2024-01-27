@@ -1,5 +1,5 @@
 "use client";
-import { BlogProps, Category } from "@/types/Types";
+import { BlogProps } from "@/types/Types";
 import { Post, allPosts } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
 import { motion } from "framer-motion";
@@ -80,7 +80,8 @@ const Posts: React.FC<BlogProps> = ({
     if (params?.slug) {
       items = allPosts.filter((post) =>
         post.categories?.some(
-          (category: Category) =>
+          (category) =>
+            // @ts-ignore
             category.title
               .toLowerCase()
               .trim()
