@@ -1,3 +1,5 @@
+import { Project } from "contentlayer/generated";
+
 export interface PropTypes {
   className?: string;
 }
@@ -63,4 +65,8 @@ export interface BlogProps {
 
 export interface Category {
   title: string;
+}
+
+export interface SlugParams {
+  slug: string;
 }

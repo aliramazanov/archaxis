@@ -1,9 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 import Hero from "@/components/PagesHero";
-import Projects from "@/components/projects/Projects";
 import CTA from "@/components/projects/CTA";
+import Projects from "@/components/projects/Projects";
+import React from "react";
 
 const page = () => {
   return (

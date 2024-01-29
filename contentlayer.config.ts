@@ -102,6 +102,18 @@ const Project = defineDocumentType(() => ({
       description: "The year of the project",
       required: true,
     },
+    excerpt: {
+      type: "string",
+      description: "The excerpt of the project",
+      required: true,
+    },
+    slug: {
+      type: "string",
+      description: "The slug of the project",
+      required: true,
+      resolve: (doc: { title: string }) =>
+        doc.title.toLowerCase().replace(/\s+/g, "-"),
+    },
   },
   computedFields: {
     url: {
