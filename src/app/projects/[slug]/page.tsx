@@ -1,45 +1,41 @@
 import { SlugParams } from "@/types/Types";
-import { allProjects } from "contentlayer/generated";
+import { Project, allProjects } from "contentlayer/generated";
 import React from "react";
 import ProjectContent from "./ProjectContent";
 
 export async function generateStaticParams() {
   const projects = await allProjects;
-  console.log(projects);
   return projects.map((project) => ({ slug: project.slug }));
 }
 
 export const generateMetadata = async ({ params }: { params: SlugParams }) => {
-  const projects = await allProjects;
-  console.log("All Projects:", projects);
+  const projects = allProjects;
+  console.log("Params Slug:", params.slug);
 
-  const matchingProjects = projects.filter(
-    (project) => project._raw.flattenedPath === "projects/" + params.slug
-  );
-  console.log("Matching Projects:", matchingProjects);
+  const project = projects.find((project) => {
+    console.log("Flattened Path:", project._raw.flattenedPath);
+    return project._raw.flattenedPath === "projects/" + params.slug;
+  });
 
-  if (matchingProjects.length > 0) {
-    const project = matchingProjects[0];
-    console.log("Selected Project:", project);
-    return { title: project.title, excerpt: project.excerpt };
-  } else {
-    console.log("No Matching Project Found");
-    return { title: "Project Not Found", excerpt: "No excerpt available" };
-  }
+  console.log("Found Project:", project);
+
+  return { title: project?.title, excerpt: project?.excerpt };
 };
 
 const ProjectLayout = ({ params }: { params: SlugParams }) => {
-  const projects = allProjects.find(
-    (project) => project._raw.flattenedPath === "projects/" + params.slug
-  );
+  const projects = allProjects;
+  const project: Project =
+    projects.find(
+      (proj) => proj._raw.flattenedPath === "projects/" + params.slug
+    ) || ({} as Project);
 
-  if (!projects) {
+  if (!project) {
     return <div>Project not found</div>;
   }
 
   return (
     <React.Fragment>
-      <ProjectContent project={projects} />
+      <ProjectContent project={project} />
     </React.Fragment>
   );
 };

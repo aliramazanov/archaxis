@@ -6,6 +6,7 @@ import Link from "next/link";
 //@ts-ignore
 const PostCard = ({ project, index }) => {
   index *= 0.5;
+  console.log(project);
 
   return (
     <section>

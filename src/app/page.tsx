@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import Blog from "@/components/Blog";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import StayInTouch from "@/components/StayInTouch";
 import Testimonials from "@/components/Testimonials";

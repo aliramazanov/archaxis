@@ -5,11 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { getMDXComponent } from "next-contentlayer/hooks";
-import { allPosts } from "contentlayer/generated";
+import { Project, allPosts } from "contentlayer/generated";
 import PostCard from "@/components/projects/PostCard";
-//@ts-ignore
-const ProjectContent = ({ project }) => {
-  const projects = allPosts.sort((a, b) =>
+
+interface ProjectContentProps {
+  project: Project;
+}
+
+const ProjectContent: React.FC<ProjectContentProps> = ({ project }) => {
+  const allProjects = allPosts;
+  const projects = allProjects.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
 

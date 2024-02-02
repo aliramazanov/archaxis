@@ -1,5 +1,3 @@
-import { Project } from "contentlayer/generated";
-
 export interface PropTypes {
   className?: string;
 }
@@ -14,7 +12,7 @@ export interface CTATypes {
 
 export interface ItemTypes {
   className?: string;
-  currentItems?: Array<string>;
+  currentItems?: Project[];
 }
 
 export interface HeroTypes {
@@ -70,3 +68,10 @@ export interface Category {
 export interface SlugParams {
   slug: string;
 }
+
+export type Project = {
+  url: string;
+  image: string;
+  role: string;
+  title: string;
+};

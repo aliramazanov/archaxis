@@ -81,7 +81,6 @@ const Posts: React.FC<BlogProps> = ({
       items = allPosts.filter((post) =>
         post.categories?.some(
           (category) =>
-            // @ts-ignore
             category.title
               .toLowerCase()
               .trim()

@@ -1,6 +1,6 @@
 "use client";
 import { ItemTypes, ProjectTypes } from "@/types/Types";
-import { allProjects } from "contentlayer/generated";
+import { Project, allProjects } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -60,9 +60,8 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
   const items = allProjects.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
-  console.log(items);
 
-  const [currentItems, setCurrentItems] = useState<string[]>([]);
+  const [currentItems, setCurrentItems] = useState<Project[]>([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
   const [clcikPaginate, setClcikPaginate] = useState(false);
@@ -70,7 +69,6 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    //@ts-ignore
     setCurrentItems(Array.from(items.slice(itemOffset, endOffset)));
 
     setPageCount(Math.ceil(items.length / itemsPerPage));

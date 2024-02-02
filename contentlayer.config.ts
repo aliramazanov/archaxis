@@ -4,8 +4,6 @@ import {
   makeSource,
 } from "contentlayer/source-files";
 
-console.log("Content layer configuration started");
-
 const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `blog/*.mdx`,
@@ -42,6 +40,13 @@ const Post = defineDocumentType(() => ({
       description: "The categories of the post",
       required: false,
     },
+    slug: {
+      type: "string",
+      description: "The slug of the project",
+      required: true,
+      resolve: (doc: { title: string }) =>
+        doc.title.toLowerCase().replace(/\s+/g, "-"),
+    },
   },
   computedFields: {
     url: {
@@ -54,7 +59,7 @@ const Post = defineDocumentType(() => ({
 const Category = defineNestedType(() => ({
   name: "Category",
   fields: {
-    type: {
+    title: {
       type: "string",
       description: "The title of the category",
       required: true,
@@ -126,5 +131,4 @@ const Project = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "content",
   documentTypes: [Post, Project],
-  disableImportAliasWarning: true,
 });
