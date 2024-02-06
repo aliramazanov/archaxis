@@ -1,6 +1,6 @@
 import { SlugParams } from "@/types/Types";
 import { allProjects } from "contentlayer/generated";
-import ProjectContent from "./ProjectContent";
+import ProjectContent from "../ProjectContent";
 
 export async function generateStaticParams() {
   const projects = await allProjects;

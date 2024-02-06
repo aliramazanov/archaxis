@@ -31,7 +31,7 @@ const Items: React.FC<ItemTypes> = ({ currentItems }) => {
             >
               <Link
                 className="overflow-hidden block relative "
-                href={project.url}
+                href={`/projects/${project.slug}`}
               >
                 <Image
                   className="object-cover object-center h-[400px] !max-w-full duration-300 transition-all ease-in-out group-hover:scale-105 "
@@ -44,7 +44,10 @@ const Items: React.FC<ItemTypes> = ({ currentItems }) => {
               <div className="py-8 px-2">
                 <span className="block mb-1 text-gray-500">{project.role}</span>
                 <h3 className="mb-4">
-                  <Link className="text-2xl leading-none" href={project.url}>
+                  <Link
+                    className="text-2xl leading-none"
+                    href={`/projects/${project.slug}`}
+                  >
                     {project.title}
                   </Link>
                 </h3>
@@ -69,7 +72,7 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems(Array.from(items.slice(itemOffset, endOffset)));
+    setCurrentItems(items.slice(itemOffset, endOffset));
 
     setPageCount(Math.ceil(items.length / itemsPerPage));
 

@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
+import { Project, allProjects } from "contentlayer/generated";
+import { compareDesc, format, parseISO } from "date-fns";
+import { motion } from "framer-motion";
+import { getMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { compareDesc, format, parseISO } from "date-fns";
-import { getMDXComponent } from "next-contentlayer/hooks";
-import { Project, allProjects } from "contentlayer/generated";
-import PostCard from "@/components/projects/PostCard";
+import React from "react";
+import PostCard from "./PostCard";
 
 const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
@@ -16,9 +16,8 @@ const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
   let MDXContent: React.FC<{}> = () => null;
 
   if (!project) {
-    console.log("Projects not found");
+    console.log("Error: Project data not found!");
   } else {
-    console.log(project.body.code);
     MDXContent = getMDXComponent(project.body.code);
   }
 
@@ -31,11 +30,11 @@ const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
         transition: { delay: 0.3, duration: 0.5 },
       }}
       viewport={{ once: true }}
-      className="pt-44 pb-20 lg:pb-36 container px-4 mx-auto"
+      className="pt-44 pb-20 container px-4 mx-auto"
     >
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-16 max-w-4xl mx-auto">
-          <h1 className="text-center text-4xl lg:text-6xl font-medium text-zinc-900">
+          <h1 className="text-center text-4xl/none lg:text-6xl/none font-medium text-zinc-900">
             {project.title}
           </h1>
           <p className="text-zinc-500 mt-10">
@@ -87,7 +86,7 @@ const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
           <div>
             <div className="flex justify-center mt-10">
               <Link
-                href={"/project"}
+                href={"/projects"}
                 className="transition-all duration-300 ease-in-out text-xs tracking-[2px] font-bold uppercase bg-green-600 py-4 px-5 text-white hover:bg-white hover:text-green-600 hover:shadow-2xl"
               >
                 View All Projects

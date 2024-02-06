@@ -16,7 +16,7 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
   let MDXContent: React.FC<{}> = () => null;
 
   if (!posts) {
-    console.log("Posts not found");
+    console.log("Error: Blog Post data not found!");
   } else {
     MDXContent = getMDXComponent(post.body.code);
   }
@@ -66,7 +66,7 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
             className="object-cover object-top"
           />
         </div>
-        <article className="prose mx-auto max-2-2xl">
+        <article className="prose mx-auto max-w-2xl">
           <MDXContent />
         </article>
         <div className="max-w-4xl mx-auto mt-20 lg:mt-32">

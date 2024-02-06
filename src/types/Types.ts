@@ -41,6 +41,17 @@ export interface PostCardProps {
     author: string;
   };
 }
+export interface ProjectProps {
+  index: number;
+  project: {
+    slug: any;
+    url: string;
+    image: string;
+    title: string;
+    date: string;
+    role: string;
+  };
+}
 
 export interface ProjectState {
   id: number;
