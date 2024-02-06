@@ -64,7 +64,7 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
   const [currentItems, setCurrentItems] = useState<Project[]>([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const [clcikPaginate, setClcikPaginate] = useState(false);
+  const [clickPaginate, setClickPaginate] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -73,18 +73,18 @@ const Projects: React.FC<ProjectTypes> = ({ className, itemsPerPage }) => {
 
     setPageCount(Math.ceil(items.length / itemsPerPage));
 
-    if (clcikPaginate === true) {
+    if (clickPaginate === true) {
       ref.current?.scrollIntoView({
         top: -50,
         behavior: "smooth",
       } as ScrollIntoViewOptions);
-      setClcikPaginate(false);
+      setClickPaginate(false);
     }
-  }, [itemOffset, itemsPerPage, clcikPaginate, items]);
+  }, [itemOffset, itemsPerPage, clickPaginate, items]);
 
   const handlePageClick = (event: { selected: number }) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
-    setClcikPaginate(true);
+    setClickPaginate(true);
     setItemOffset(newOffset);
   };
 

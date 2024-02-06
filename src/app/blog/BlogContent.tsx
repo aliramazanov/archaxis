@@ -1,19 +1,20 @@
 "use client";
-import { Post, allPosts } from "contentlayer/generated";
-import { compareDesc, format, parseISO } from "date-fns";
-import { motion } from "framer-motion";
-import { getMDXComponent } from "next-contentlayer/hooks";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { motion } from "framer-motion";
+import { compareDesc, format, parseISO } from "date-fns";
+import { getMDXComponent } from "next-contentlayer/hooks";
+import { Post, allPosts } from "contentlayer/generated";
 import PostCard from "./PostCard";
 
 const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
+
   let MDXContent: React.FC<{}> = () => null;
-  if (!posts) return null;
+
   if (!posts) {
     console.log("Posts not found");
   } else {
@@ -33,12 +34,11 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
     >
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-16 max-w-4xl mx-auto">
-          <h1 className="text-slate-900 text-center text-4xl/none lg:text-6xl/none font-medium">
+          <h1 className="text-zinc-900 text-center text-4xl/none lg:text-6xl/none font-medium">
             {post.title}
           </h1>
-          <p className="text-slate-500 mt-10">
+          <p className="text-zinc-500 mt-10">
             <span className="inline-flex space-x-3"></span>
-
             <span>{format(parseISO(post.date), "LLL d, yyyy")}</span>
             <span>&#8226;</span>
             <span>{post.author}</span>
@@ -60,9 +60,9 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
         <div className="mb-16">
           <Image
             src={post.image}
+            alt={post.title}
             width={1000}
             height={600}
-            alt={post.title}
             className="object-cover object-top"
           />
         </div>

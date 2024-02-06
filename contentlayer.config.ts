@@ -42,7 +42,7 @@ const Post = defineDocumentType(() => ({
     },
     slug: {
       type: "string",
-      description: "The slug of the project",
+      description: "The slug of the post",
       required: true,
     },
   },

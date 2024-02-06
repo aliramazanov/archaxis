@@ -1,6 +1,5 @@
 import { SlugParams } from "@/types/Types";
-import { Project, allProjects } from "contentlayer/generated";
-import React from "react";
+import { allProjects } from "contentlayer/generated";
 import ProjectContent from "./ProjectContent";
 
 export async function generateStaticParams() {
@@ -9,29 +8,17 @@ export async function generateStaticParams() {
 }
 
 export const generateMetadata = async ({ params }: { params: SlugParams }) => {
-  const projects = allProjects;
+  const projects = await allProjects;
   const project = projects.find((project) => {
     return project._raw.flattenedPath === "projects/" + params.slug;
   });
+
   return { title: project?.title, excerpt: project?.excerpt };
 };
 
-const ProjectLayout = ({ params }: { params: SlugParams }) => {
-  const projects = allProjects;
-  const project: Project =
-    projects.find(
-      (proj) => proj._raw.flattenedPath === "projects/" + params.slug
-    ) || ({} as Project);
-
-  if (!project) {
-    return <div>Project not found</div>;
-  }
-
-  return (
-    <React.Fragment>
-      <ProjectContent project={project} />
-    </React.Fragment>
-  );
+const page = ({ params }: { params: SlugParams }) => {
+  const project = allProjects.find((project) => project.slug === params.slug);
+  return <div>{project && <ProjectContent project={project} />}</div>;
 };
 
-export default ProjectLayout;
+export default page;
