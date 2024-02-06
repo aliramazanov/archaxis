@@ -40,6 +40,11 @@ const Post = defineDocumentType(() => ({
       description: "The categories of the post",
       required: false,
     },
+    slug: {
+      type: "string",
+      description: "The slug of the project",
+      required: true,
+    },
   },
   computedFields: {
     url: {
@@ -103,6 +108,11 @@ const Project = defineDocumentType(() => ({
     excerpt: {
       type: "string",
       description: "The excerpt of the project",
+      required: true,
+    },
+    slug: {
+      type: "string",
+      description: "The slug of the project",
       required: true,
     },
   },

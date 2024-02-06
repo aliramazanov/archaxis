@@ -3,10 +3,6 @@ import StayInTouch from "@/components/StayInTouch";
 import Posts from "@/components/blog/Posts";
 import React from "react";
 
-const metadata = {
-  title: "Blog- archaxis",
-};
-
 const page = () => {
   return (
     <React.Fragment>

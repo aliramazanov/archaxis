@@ -75,3 +75,14 @@ export type Project = {
   role: string;
   title: string;
 };
+
+export interface PostCardProps {
+  post: {
+    url: string;
+    image: string;
+    author: string;
+    title: string;
+    date: string;
+  };
+  index: number;
+}

@@ -10,15 +10,9 @@ export async function generateStaticParams() {
 
 export const generateMetadata = async ({ params }: { params: SlugParams }) => {
   const projects = allProjects;
-  console.log("Params Slug:", params.slug);
-
   const project = projects.find((project) => {
-    console.log("Flattened Path:", project._raw.flattenedPath);
     return project._raw.flattenedPath === "projects/" + params.slug;
   });
-
-  console.log("Found Project:", project);
-
   return { title: project?.title, excerpt: project?.excerpt };
 };
 

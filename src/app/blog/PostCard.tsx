@@ -1,10 +1,10 @@
 "use client";
+import { PostCardProps } from "@/types/Types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-//@ts-ignore
-const PostCard = ({ project, index }) => {
+const PostCard: React.FC<PostCardProps> = ({ post, index }) => {
   index *= 0.5;
 
   return (
@@ -19,20 +19,20 @@ const PostCard = ({ project, index }) => {
         viewport={{ once: true }}
         className="relative overflow-hidden"
       >
-        <Link href={project.url}>
+        <Link href={post.url}>
           <Image
             className="object-cover object-center h-96 !max-w-full"
-            src={project.image}
+            src={post.image}
             alt="Ali Ramazanov"
             width={1000}
             height={650}
           />
         </Link>
         <div className="py-8 px-2">
-          <span className="block mb-1 text-gray-500">{project.role}</span>
+          <span className="block mb-1 text-gray-500">{post.author}</span>
           <h3 className="mb-4">
-            <Link href={project.url} className="text-2xl leading-none">
-              {project.title}
+            <Link href={post.url} className="text-2xl leading-none">
+              {post.title}
             </Link>
           </h3>
         </div>

@@ -1,6 +1,7 @@
 import { SlugParams } from "@/types/Types";
 import { allPosts, allProjects } from "contentlayer/generated";
 import React from "react";
+import BlogContent from "../BlogContent";
 
 export async function generateStaticParams() {
   const posts = await allPosts;
@@ -9,24 +10,20 @@ export async function generateStaticParams() {
 
 export const generateMetadata = async ({ params }: { params: SlugParams }) => {
   const posts = await allPosts;
-  console.log("Params Slug:", params.slug);
-
   const post = posts.find((post) => {
-    console.log("Flattened Path:", post._raw.flattenedPath);
-    return post._raw.flattenedPath === "projects/" + params.slug;
+    return post._raw.flattenedPath === "blog/" + params.slug;
   });
-
-  console.log("Found Project:", post);
 
   return { title: post?.title, excerpt: post?.excerpt };
 };
 
-const page = () => {
-  return (
-    <div>
-      <React.Fragment></React.Fragment>
-    </div>
-  );
+interface PageProps {
+  params: SlugParams;
+}
+
+const page: React.FC<PageProps> = ({ params }) => {
+  const post = allPosts.find((post) => post.slug === params.slug);
+  return <div>{post && <BlogContent post={post} />}</div>;
 };
 
 export default page;
