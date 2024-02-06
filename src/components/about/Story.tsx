@@ -37,21 +37,18 @@ const storyContent = {
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
-        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: img4,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
-        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: img5,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
-        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
     ],
   },
@@ -62,14 +59,12 @@ const storyContent = {
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
-        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
       {
         img: post2,
         alt: "Image related to architecture",
         width: 1100,
         height: 1100,
-        tailwind: "h-56 lg:h-96 rounded-2xl",
       },
     ],
   },
@@ -111,7 +106,7 @@ const Story: React.FC<PropTypes> = ({ className }) => {
                       height={item.height}
                       alt={item.alt}
                       src={item.img}
-                      className={`${item.tailwind}`}
+                      className={"rounded-xl"}
                     />
                   </motion.div>
                 );
@@ -137,7 +132,7 @@ const Story: React.FC<PropTypes> = ({ className }) => {
                     <Image
                       alt={item.alt}
                       src={item.img}
-                      className={`${item.tailwind}`}
+                      className={"rounded-xl"}
                     />
                   </motion.div>
                 );
@@ -163,7 +158,7 @@ const Story: React.FC<PropTypes> = ({ className }) => {
                     <Image
                       alt={item.alt}
                       src={item.img}
-                      className={`${item.tailwind}`}
+                      className={"rounded-xl"}
                     />
                   </motion.div>
                 );
@@ -204,6 +199,7 @@ const Story: React.FC<PropTypes> = ({ className }) => {
                 src={storyContent.storyText.signature}
                 width={300}
                 height={100}
+                className={"rounded-xl"}
               />
               <strong className="block mb-2 mt-4 text-gray-800 font-medium">
                 {storyContent.storyText.name}
