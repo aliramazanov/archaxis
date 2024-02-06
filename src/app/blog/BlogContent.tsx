@@ -39,10 +39,8 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
           </h1>
           <p className="text-zinc-500 mt-10">
             <span className="inline-flex space-x-3"></span>
-            <span>{format(parseISO(post.date), "LLL d, yyyy")}</span>
-            <span>&#8226;</span>
-            <span>{post.author}</span>
-            <span className="mx-3">{post.author}</span>
+            <span>{format(parseISO(post.date), "LLL d, yyyy")}</span>{" "}
+            <span>&#8226;</span> <span>{post.author}</span>{" "}
             {post.categories?.map((category, index: number) => {
               return (
                 <Link
@@ -66,7 +64,7 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
             className="object-cover object-top"
           />
         </div>
-        <article className="prose mx-auto max-w-2xl">
+        <article className="prose mx-auto max-w-2xl text-xl">
           <MDXContent />
         </article>
         <div className="max-w-4xl mx-auto mt-20 lg:mt-32">

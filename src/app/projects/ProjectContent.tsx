@@ -6,7 +6,7 @@ import { getMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import PostCard from "./PostCard";
+import PostCard from "./ProjectCard";
 
 const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
@@ -71,7 +71,9 @@ const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
               </div>
             </div>
           </div>
-          <MDXContent />
+          <article className="prose mx-auto max-w-2xl text-xl">
+            <MDXContent />
+          </article>{" "}
         </article>
       </div>
       <div className="max-w-4xl mx-auto mt-14 lg:mt-28">
