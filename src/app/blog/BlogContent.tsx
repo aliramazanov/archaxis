@@ -45,11 +45,11 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
               return (
                 <Link
                   className="font-medium"
-                  key={category.title}
+                  key={`${category.title}`}
                   href={`blog/categories/${post.slug}`}
                 >
                   {category.title}
-                  {index < (post.categories?.length ?? 0) - 1 ? "," : ""}
+                  {index < (post.categories?.length ?? 0) - 1 ? ", " : ""}
                 </Link>
               );
             })}

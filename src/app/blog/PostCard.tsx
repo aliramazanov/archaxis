@@ -23,7 +23,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, index }) => {
           <Image
             className="object-cover object-center h-96 !max-w-full"
             src={post.image}
-            alt="Ali Ramazanov"
+            alt="Image"
             width={1000}
             height={650}
           />
