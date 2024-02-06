@@ -37,20 +37,19 @@ const BlogContent: React.FC<{ post: Post }> = ({ post }) => {
           <h1 className="text-zinc-900 text-center text-4xl/none lg:text-6xl/none font-medium">
             {post.title}
           </h1>
-          <p className="text-zinc-500 mt-10">
+          <p className="text-zinc-500 mt-10 flex items-center justify-center gap-1">
             <span className="inline-flex space-x-3"></span>
             <span>{format(parseISO(post.date), "LLL d, yyyy")}</span>{" "}
             <span>&#8226;</span> <span>{post.author}</span>{" "}
             {post.categories?.map((category, index: number) => {
               return (
-                <Link
-                  className="font-medium"
+                <div
+                  className="font-medium flex items-center justify-center"
                   key={`${category.title}`}
-                  href={`blog/categories/${post.slug}`}
                 >
-                  {category.title}
+                  <p className="">{category.title}</p>
                   {index < (post.categories?.length ?? 0) - 1 ? ", " : ""}
-                </Link>
+                </div>
               );
             })}
           </p>

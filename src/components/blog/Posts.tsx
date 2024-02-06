@@ -69,7 +69,6 @@ const Posts: React.FC<BlogProps> = ({
   const [itemOffset, setItemOffset] = useState<number>(0);
   const [clickPaginate, setClickPaginate] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement | null>(null);
-
   let items: Post[] | null = null;
 
   if (archive === false) {

@@ -10,7 +10,7 @@ Welcome to archaxis, a landing page designed for an architectural company. This 
 
 - **Motion Effects with Framer Motion**: Framer Motion is utilized to add fluid motion and dynamic animations.
 
-- **Accessibility**: For accessibility HeadlessUI used, which provides inclusive experience for all users.
+- **Accessibility**: For accessibility HeadlessUI has been used, which provides inclusive experience for all users.
 
 - **Fully TypeScript**: The entire project is developed using TypeScript, ensuring code integrity through static typing.
 
