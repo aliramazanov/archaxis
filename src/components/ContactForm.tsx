@@ -20,7 +20,7 @@ const ContactForm: React.FC<PropTypes> = ({ className }) => {
       className={`${className} `}
     >
       <div className="container px-4 mx-auto">
-        <div className="lg:flex items-stretch mb-32 px-14">
+        <div className="lg:flex items-stretch mb-32 lg:px-14">
           <div className="lg:w-6/12 flex-1">
             <Image
               src={"/project5.jpg"}
