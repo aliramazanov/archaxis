@@ -17,21 +17,21 @@ const ContactForm: React.FC<PropTypes> = ({ className }) => {
         },
       }}
       viewport={{ once: true }}
-      className={className}
+      className={`${className} `}
     >
       <div className="container px-4 mx-auto">
-        <div className="lg:flex items-stretch mb-32">
+        <div className="lg:flex items-stretch mb-32 px-14">
           <div className="lg:w-6/12 flex-1">
             <Image
               src={"/project5.jpg"}
               width={1000}
               height={600}
               alt="Image"
-              className="object-cover object-center max-w-full h-full bg-white"
+              className="lg:rounded-tl-3xl lg:rounded-bl-3xl object-cover object-center max-w-full h-full bg-white"
             />
           </div>
-          <div className="lg:w-6/12 flex-1">
-            <form className="p-14 bg-white h-full">
+          <div className="lg:w-6/12 flex-1 ">
+            <form className="p-14 bg-white h-full lg:rounded-tr-3xl lg:rounded-br-3xl">
               <h2 className="text-gray-800 mb-4 text-3xl">Get In Touch</h2>
               <p className="text-gray-500 mb-6">
                 Do you have any questions or feedback to share with us? Please

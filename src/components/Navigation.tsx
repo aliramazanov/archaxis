@@ -138,7 +138,7 @@ const Navigation: React.FC = () => {
                       <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                         <div>
                           <Link
-                            className="block text-center text-xs tracking-[2px] font-bold bg-violet-600 hover:bg-violet-800 py-4 px-5 mr-28 text-white"
+                            className="block text-center text-xs tracking-[2px] font-bold bg-green-500 hover:bg-green-800 py-4 px-5 mr-28 text-white"
                             href={"/contact"}
                           >
                             Contact Us

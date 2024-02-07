@@ -1,8 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Hero from "@/components/PagesHero";
 import ContactForm from "@/components/ContactForm";
+import Hero from "@/components/PagesHero";
+import React from "react";
 
 const page = () => {
   return (
